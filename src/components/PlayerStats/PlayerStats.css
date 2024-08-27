@@ -1,0 +1,32 @@
+/* Container for player stats table */
+.player-stats {
+    margin: 20px auto; /* Centers the container horizontally with margin on top and bottom */
+    width: 80%; /* Sets the container width to 80% of its parent element */
+    overflow-x: auto; /* Allows horizontal scrolling if the table overflows */
+    position: relative; /* Ensures that sticky positioning for child elements works correctly */
+}
+
+/* Styles for the table within the player-stats container */
+.player-stats table {
+    width: 100%; /* Makes the table take up 100% of the width of its container */
+    border-collapse: collapse; /* Collapses table borders to ensure a seamless border */
+    text-align: left; /* Aligns text to the left within table cells */
+}
+
+/* General styles for table headers and data cells */
+.player-stats th, .player-stats td {
+    border: 1px solid #ddd; /* Adds a light gray border around table cells */
+    padding: 8px; /* Adds padding inside each cell */
+    text-align: center; /* Centers text horizontally within table cells */
+    white-space: nowrap; /* Prevents text from wrapping to the next line within cells */
+}
+
+/* Styles specifically for table headers */
+.player-stats th {
+    background-color: #f4f4f4; /* Sets a light gray background color for table headers */
+    font-weight: bold; /* Makes the text in headers bold */
+    position: sticky; /* Keeps the header fixed in place when scrolling */
+    top: 0; /* Positions the sticky header at the top of the table */
+    z-index: 2; /* Ensures the header stays above other table content */
+}
+
