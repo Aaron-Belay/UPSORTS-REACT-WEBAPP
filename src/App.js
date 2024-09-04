@@ -6,6 +6,8 @@ import ConferenceStandings from './components/ConferenceStandings/ConferenceStan
 import data from './data/usportsData.json';
 import './App.css';
 
+/*J Larosili's Name is scuffed for some reason*/
+
 function App() {
     const [gender, setGender] = useState('');
     const [category, setCategory] = useState('');
@@ -36,30 +38,30 @@ function App() {
                 </div>
             )}
 
-            {step === 2 && (
-                <div className="category-page">
-                    <h2>{gender === 'mens' ? "Men's" : "Women's"} Basketball</h2>
-                    <p>Would you like to view Teams or Players?</p>
-                    <div className="buttons">
+        {step === 2 && (
+            <div className="category-page">
+                <h2>{gender === 'mens' ? "Men's" : "Women's"} Basketball</h2>
+                <p>Would you like to view Teams or Players?</p>
+                <div className="buttons">
                     <button onClick={() => {
                         console.log("Back button clicked");
                         setStep(1);
                     }}>Back</button>
-                        <button onClick={() => handleCategorySelect('teams')}>Teams</button>
-                        <button onClick={() => handleCategorySelect('players')}>Players</button>
-                    </div>
-                    {/* Conference Standings - Only visible when category is not selected */}
-                    {(
-                        conferences.map(conference => (
-                            <ConferenceStandings
-                                key={conference}
-                                conferenceName={conference}
-                                teamsData={data.team[gender]}
-                            />
-                        ))
-                    )}
+                    <button onClick={() => handleCategorySelect('teams')}>Teams</button>
+                    <button onClick={() => handleCategorySelect('players')}>Players</button>
                 </div>
-            )}
+                {/* Conference Standings - Only visible when category is not selected */}
+                <h1>Conference Standings</h1>
+                {conferences.map(conference => (
+                    <ConferenceStandings
+                        key={conference}
+                        conferenceName={conference}
+                        teamsData={data.team[gender]}
+                    />
+                ))}
+            </div>
+        )}
+
 
 {step === 3 && (
         <>
