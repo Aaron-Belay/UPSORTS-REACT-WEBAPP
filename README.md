@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# U Sports React Webapp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+The **U Sports React Webapp** is a dynamic web application developed using React.js that allows users to access and visualize detailed basketball statistics from the U Sports website. The application enables users to select between men's and women's basketball data, view team and player statistics, and explore conference standings.
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- **React.js**: Frontend library for building user interfaces.
+- **JavaScript**: Programming language for application logic.
+- **CSS**: Styling language for application layout and design.
+- **Playwright**: Web scraping library used to extract basketball statistics.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Current Stat Groups
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Conference Standings
+This section covers all 6 conferences in U Sports basketball, ranking teams from best to worst for each league (Men's or Women's).
 
-### `npm run build`
+<div style="text-align: center;">
+    <img src="image-1.png" alt="Search" width="680" height="420"/>
+</div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Team Stats
+This section covers all 56 teams from the men's and women's in U Sports basketball, tracking a total of 40 performance statistics for each team. The data includes various metrics that facilitate in-depth analysis and comparisons across teams.
 
-### `npm run eject`
+<div style="text-align: center;">
+    <img src="image-3.png" alt="Search" width="680" height="420"/>
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Player Stats
+This section covers all 550+ players from both the men's and women's in U Sports basketball, tracking a total of 22 performance statistics for each player. The data includes various metrics that facilitate in-depth analysis and comparisons across teams.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<div style="text-align: center;">
+    <img src="image-4.png" alt="Search" width="680" height="420"/>
+</div>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions are welcome! If you have suggestions for improvements, please fork the repository and create a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To run this project locally, follow these steps:
 
-### Making a Progressive Web App
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/usports-react-webapp.git
+2. Navigate into the project directory:
+   ```bash
+   cd usports-react-webapp
+3. Install the necessary dependencies:
+   ```bash
+   npm install
+4. Start the development server:
+   ```bash
+   npm start
+5. Open your browser and go to http://localhost:3000 to view the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Usage
+- Once in the application, select the desired league (Men’s or Women’s) on the welcome page.
+- Choose whether to view Teams or Players on the category page.
+- View Conference Standings, Team Stats, or Player Stats based on your selection.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+Thank you for taking the time to read this README! Your interest in this project is greatly appreciated. If you have any questions or feedback, feel free to reach out.
