@@ -42,11 +42,6 @@ This section covers all 550+ players from both the men's and women's in U Sports
 
 
 
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements, please fork the repository and create a pull request.
-
-
 ## Installation
 
 To run this project locally, follow these steps:
