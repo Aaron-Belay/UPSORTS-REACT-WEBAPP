@@ -65,6 +65,3 @@ To run this project locally, follow these steps:
 - Once in the application, select the desired league (Men’s or Women’s) on the welcome page.
 - Choose whether to view Teams or Players on the category page.
 - View Conference Standings, Team Stats, or Player Stats based on your selection.
-
-## Acknowledgments
-Thank you for taking the time to read this README! Your interest in this project is greatly appreciated. If you have any questions or feedback, feel free to reach out.
